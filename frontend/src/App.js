@@ -34,7 +34,7 @@ function App() {
 
   const fetchDoctorInfo = async (patientId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/doctor-info/${patientId}`);
+      const response = await axios.get(`https://health-backend-v84i.onrender.com/${patientId}`);
       setDoctor(response.data);
     } catch (error) {
       console.error('Error fetching doctor info:', error);
