@@ -1,0 +1,119 @@
+/* Patient Info Container */
+.patient-info-container {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(200, 204, 212, 0.08);
+}
+
+/* Patient Image */
+.patient-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Patient Details */
+.patient-details h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #072635;
+  margin-bottom: 24px;
+}
+
+.detail-item {
+  margin-bottom: 16px;
+}
+@media screen and (max-width:1920px) {
+  .patient-image img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.patient-details h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #072635;
+  margin-bottom: 16px !important;
+}
+  
+}
+.detail-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #707070;
+}
+
+.detail-value {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #072635;
+}
+
+.btn-primary {
+  background: #01F0D0;
+  border: none;
+  border-radius: 41px;
+  padding: 11px 19px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #072635;
+  cursor: pointer;
+  align-items: center;
+}
+.btn-primary:hover {
+  background: #00D8B8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .patient-info-container {
+    padding: 20px;
+  }
+
+  .patient-details h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .detail-label,
+  .detail-value {
+    font-size: 12px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .patient-image img {
+    max-width: 150px;
+  }
+
+  .patient-details h2 {
+    font-size: 18px;
+  }
+
+  .detail-label,
+  .detail-value {
+    font-size: 10px;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}

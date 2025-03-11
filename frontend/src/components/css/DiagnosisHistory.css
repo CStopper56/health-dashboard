@@ -1,0 +1,187 @@
+/* Base styles */
+.dhc_card-container {
+  border: none;
+}
+
+.title_bp {
+  font: normal normal 800 20px / 30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  padding: 4px 25px;
+}
+.card-body {
+  background: #F4F0FE 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  padding: 20px;
+  margin: 0px 20px;
+}
+
+.dhc_filter-dropdown {
+  border: none !important;
+
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+background-color: transparent;
+  opacity: 1;
+}
+
+.dhc_chart-container {
+  position: relative;
+}
+
+.dhc_vitals-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dhc_vital-card, .dhc_vital-card_b {
+  padding: 10px;
+}
+
+.dhc_vital-card_b {
+  border-bottom: 2px #adadad solid;
+}
+
+.dhc_metric-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+
+.dhc_systolic {
+  background-color: rgb(230 111 210);
+}
+
+.dhc_diastolic {
+  background-color: rgb(140 111 230);
+}
+
+.dhc_card_title {
+  font: normal bold 14px Manrope;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-bottom: 0.5rem;
+}
+.dhc_metric-value {
+  font: normal normal bold 22px / 30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-bottom: 2px;
+}
+
+.dhc_metric-level {
+  font: normal normal normal 14px / 19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin: 0;
+}
+
+/* Override Bootstrap's .form-select styles */
+.select.dhc_filter-dropdown.form-select {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F4F0FE;
+}
+
+.select.dhc_filter-dropdown.form-select:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title_bp {
+      font-size: 20px;
+      line-height: 28px;
+      padding: 10px 15px;
+  }
+
+  .card-body {
+      padding: 15px;
+      margin: 0px 10px;
+  }
+
+  .dhc_filter-dropdown {
+      width: 100% !important;
+  }
+
+  .dhc_chart-container {
+      height: 300px !important;
+  }
+
+  .dhc_vitals-grid {
+      gap: 8px;
+  }
+
+  .dhc_vital-card, .dhc_vital-card_b {
+      padding: 8px;
+  }
+
+  .dhc_card_title {
+      font-size: 14px;
+  }
+
+  .dhc_metric-value {
+      font-size: 18px;
+      line-height: 24px;
+  }
+
+  .dhc_metric-level {
+      font-size: 12px;
+      line-height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title_bp {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 10px;
+  }
+
+  .card-body {
+      padding: 10px;
+      margin: 0px;
+  }
+
+  .dhc_chart-container {
+      height: 250px !important;
+  }
+
+  .dhc_vitals-grid {
+      gap: 5px;
+  }
+
+  .dhc_vital-card, .dhc_vital-card_b {
+      padding: 5px;
+  }
+
+  .dhc_card_title {
+      font-size: 12px;
+  }
+
+  .dhc_metric-value {
+      font-size: 16px;
+      line-height: 20px;
+  }
+
+  .dhc_metric-level {
+      font-size: 10px;
+      line-height: 14px;
+  }
+}

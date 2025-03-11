@@ -1,0 +1,103 @@
+.App {
+  height: 100%;
+  overflow: hidden;
+  background-color: #F6F7F8;
+
+}
+
+.dl_container {
+  margin-bottom: 20px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+}
+
+.lab-results-container {
+  margin-bottom: 20px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+}
+
+.diagnosis-history {
+  background: #FFFFFF;
+  border-radius: 16px;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 100%;
+  margin: 0;
+}
+
+.col-md-3,
+.col-md-9,
+.col-md-4,
+.col-md-8 {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Sidebar specific styles */
+.col-md-3 {
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+/* Main content specific styles */
+.col-md-9 {
+  background: #F6F7F8;
+}
+
+/* Diagnosis History Section */
+.diagnosis-history {
+  background: #FFFFFF;
+  border-radius: 16px;
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .col-md-3,
+  .col-md-9,
+  .col-md-4,
+  .col-md-8 {
+    width: 100%;
+    height: auto;
+  }
+
+  .col-md-3 {
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  .col-md-9 {
+    background: #FFFFFF;
+  }
+
+  .diagnosis-history {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .App {
+    zoom: 100%;
+  }
+
+  .diagnosis-history {
+    border-radius: 8px;
+  }
+
+  .col-md-3 {
+    border-radius: 8px;
+  }
+}
