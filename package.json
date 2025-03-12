@@ -1,20 +1,38 @@
 {
-  "name": "health-dashboard",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://CStopper56.github.io/health-dashboard",
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "latest",
+    "axios": "^0.21.1",
+    "react-chartjs-2": "^3.0.3",
+     "chart.js": "^3.5.0",
+    "lodash": "^4.17.21",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "react-icons": "^4.2.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "main -d build -r https://github.com/CStopper56/health-dashboard.git"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CStopper56/health-dashboard.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CStopper56/health-dashboard/issues"
-  },
-  "homepage": "https://github.com/CStopper56/health-dashboard#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
